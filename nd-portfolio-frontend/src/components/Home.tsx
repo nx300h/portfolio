@@ -1,9 +1,12 @@
 import React from "react";
 import profilePicture from "/Users/user/Desktop/fst/portfolio/nd-portfolio-frontend/src/Images/ND.jpg"; // Adjust the path as needed
 
-const Header: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <header className="h-screen flex flex-col justify-center items-center text-center space-y-4">
+    <section
+      id="home"
+      className="h-screen flex flex-col justify-center items-center text-center space-y-4"
+    >
       <img
         src={profilePicture}
         alt="Noel D'Souza"
@@ -17,8 +20,8 @@ const Header: React.FC = () => {
       >
         View My Work
       </a>
-    </header>
+    </section>
   );
 };
 
-export default Header;
+export default Home;

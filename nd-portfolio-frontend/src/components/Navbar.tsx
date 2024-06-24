@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
         <h1 className="text-2xl font-bold">Noel D'Souza</h1>
         <ul className="flex space-x-4">
           <li>
-            <a href="#Home" className="hover:underline">
+            <a href="#home" className="hover:underline">
               Home
             </a>
           </li>
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:underline">
+            <a href="#cv" className="hover:underline">
               CV
             </a>
           </li>

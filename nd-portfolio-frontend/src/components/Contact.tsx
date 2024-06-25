@@ -4,24 +4,27 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="py-20 "
+      className="py-20 min-h-screen flex justify-center items-center"
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
         <form className="max-w-lg mx-auto">
           <input
             type="text"
-            className="w-full p-4 mb-4 border border-gray-300 rounded"
+            className="w-full p-4 mb-4 border border-gray-300 rounded text-black"
             placeholder="Name"
+            onFocus={() => console.log("Name field focused")}
           />
           <input
             type="email"
-            className="w-full p-4 mb-4 border border-gray-300 rounded"
+            className="w-full p-4 mb-4 border border-gray-300 rounded text-black"
             placeholder="Email"
+            onFocus={() => console.log("Email field focused")}
           />
           <textarea
-            className="w-full p-4 mb-4 border border-gray-300 rounded"
+            className="w-full p-4 mb-4 border border-gray-300 rounded text-black"
             placeholder="Message"
+            onFocus={() => console.log("Message field focused")}
           ></textarea>
           <button
             type="submit"

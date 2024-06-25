@@ -1,12 +1,16 @@
 import React from "react";
 
 const CV: React.FC = () => {
-  const pdfUrl = "https://drive.google.com/file/d/12xZm9rXnGBihcCeauBzIJsDpqMJI0ckq/view?usp=drive_link";
+    const pdfViewUrl =
+      "https://drive.google.com/file/d/12xZm9rXnGBihcCeauBzIJsDpqMJI0ckq/view?usp=drive_link";
+    const pdfDownloadUrl =
+      "https://drive.google.com/uc?export=download&id=12xZm9rXnGBihcCeauBzIJsDpqMJI0ckq";
+
 
   return (
     <section
       id="cv"
-      className="py-20"
+      className="py-20 min-h-screen flex justify-center items-center"
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">My CV</h2>
@@ -16,7 +20,7 @@ const CV: React.FC = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <a
-            href={pdfUrl}
+            href={pdfViewUrl}
             className="px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,7 +28,7 @@ const CV: React.FC = () => {
             View CV
           </a>
           <a
-            href={pdfUrl}
+            href={pdfDownloadUrl}
             className="px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300"
             download="Noel_Dsouza_Resume.pdf"
           >

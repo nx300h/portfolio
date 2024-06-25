@@ -6,10 +6,11 @@ import Projects from "./components/Projects";
 import CV from "./components/CV";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from './components/ScrollToTop'; 
 
 const App: React.FC = () => {
   return (
-    <div className="flex-grow flex flex-col bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-white">
+    <div className="flex-grow flex flex-col bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 min-h-screen text-white">
       <Navbar />
       <div className="flex-grow">
         <Home />
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Contact />
       </div>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

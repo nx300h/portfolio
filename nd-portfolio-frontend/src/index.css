@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  
+  scroll-behavior: smooth;
+}
+
+#root {
+  @apply min-h-screen flex flex-col;
+}
+
+@keyframes slow-bounce {
+  0%, 100% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slow-bounce {
+  animation: slow-bounce 2s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 10s linear infinite;
+}

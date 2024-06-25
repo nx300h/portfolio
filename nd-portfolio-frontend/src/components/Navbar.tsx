@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="p-6 bg-gray-800 bg-opacity-80 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">My Portfolio</h1>
+        <h1 className="text-2xl font-bold">Noel D'Souza</h1>
         <ul className="flex space-x-4">
           <li>
             <button
